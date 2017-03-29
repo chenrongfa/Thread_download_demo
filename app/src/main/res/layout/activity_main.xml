@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="chen.yy.com.download_demo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/tv_file_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/progressBar"/>
+
+    <Button
+        android:text="download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/download"
+        android:layout_below="@+id/progressBar"
+        android:layout_toLeftOf="@+id/stop"
+       />
+
+    <Button
+        android:text="stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop"
+        android:layout_alignBaseline="@+id/download"
+        android:layout_alignBottom="@+id/download"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
